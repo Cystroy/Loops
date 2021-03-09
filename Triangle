@@ -1,0 +1,30 @@
+package loops;
+
+import java.util.Scanner;
+
+
+public class Triangle {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String triangle;
+		int height , i, j;
+		Scanner sc = new Scanner(System.in);
+		Scanner sd = new Scanner(System.in);
+
+		//Enter character
+		System.out.println("Enter the character you want your triagle to be made of.");
+		triangle = sc.next();
+		
+		//Enter the height of the triangle
+		System.out.println("What is the height of the triangle?");
+		height = sd.nextInt();
+		
+		System.out.println("Here's your triangle:");
+		for (i = 1; i <= height; i++) {
+			for (j = 1; j <= i; j++) {
+				System.out.print(triangle + " " ); }
+				System.out.println(" "); }
+			}
+		}
+	
