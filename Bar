@@ -1,0 +1,30 @@
+package loops;
+
+import java.util.Scanner;
+
+public class Bar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int i, j, length;
+		String bar;
+		Scanner sc = new Scanner(System.in);
+		Scanner sd = new Scanner(System.in);
+		
+		//Type in character
+		System.out.println("What character do you want your bar to be made of?");
+		bar = sc.next();
+		
+		//Enter length of the bar
+		System.out.println("What is the length of the bar?");
+		length = sd.nextInt();
+				for (i = 0; i < 1; i++) {
+					for (j = 0; j < length; j++) {
+						System.out.print(bar); }
+					System.out.println("");
+					}
+				}
+
+}
+
+
