@@ -1,0 +1,38 @@
+package System.out;
+
+import java.util.Scanner;
+
+public class GuessingGame {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("I picked a number between 1 to 100. Try and guess the number!");
+		int guess, number, guessNumber, random;
+		int min = 1;
+		int max = 100;
+		random = (int) (Math.random() * max - min + 1 + min);
+		Scanner sc = new Scanner(System.in);
+		
+		//Enter your guess
+		System.out.println("What number is your guess?");
+		guessNumber = 1;
+		guess = sc.nextInt();
+		
+		//Display response
+		while (guess != random) {
+			if(guess < random) {
+				System.out.println("This number is too low");
+				System.out.println("What number is your guess?");
+			}
+			if (guess > random) {
+				System.out.println("This number is too high");
+				System.out.println("What number is your guess?");
+			}
+			guess = sc.nextInt();
+			guessNumber++;
+			}
+			System.out.println("You've guess my number! Good job! It only took you "+guessNumber+" tries");	
+		}
+	}
+		
+
